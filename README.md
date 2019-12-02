@@ -30,9 +30,15 @@ we're lacking is **deterministic builds** for all stages of development.
 
 ## `pipenv` to the rescue
 
+Of course Python's most prolific developer Keneth Reitz contributed yet another
+glorious addition, this time for Python's byzantine packaging system.
+
+In particular, it bridges the gap between pip and virtual environments in
+addition to implementing new security/deployment features.
 
 ### Congruencies in action
 
+Let's do some normal things that we normally need to do, below.
 #### Initial project setup
 
 Clone/create your project and move into it:
@@ -90,8 +96,7 @@ pipenv update
 
 #### The `Pipfile`
 
-Here's the basic `Pipfile` from the [docs]
-(https://pipenv.kennethreitz.org/en/latest/basics/#example-pipenv-workflow):
+Here's the basic `Pipfile` from the [docs](https://pipenv.kennethreitz.org/en/latest/basics/#example-pipenv-workflow):
 
 ```python
 
@@ -126,7 +131,7 @@ Promoting the same build from development into production:
 > You can use `pipenv` lock to compile your dependencies on your development 
 > environment and deploy the compiled `Pipfile.lock` to all of your production
 > environments for reproducible builds.
--- [the docs](https://pipenv.kennethreitz.org/en/latest/basics/#example-pipenv-workflow)
+\-\- [the docs](https://pipenv.kennethreitz.org/en/latest/basics/#example-pipenv-workflow)
 
 ### Gotchas
 
